@@ -99,7 +99,7 @@ This is some general advice I can give you that would be relevant in any online 
 
 From a purely technical standpoint it's not the most sophisticated attack out there, but it's reasonably well-executed and the malicious code is heavily obfuscated that you would not pick it out right off the bat. Obviously if you're a non-technical person then all of this will likely go over your head.
 
-I have saved the files in the [git repo](https://github.com/kavehtehrani/job_offer_scam) if you want to check it out for yourself.
+I have saved the files in the [git repo](https://github.com/kavehtehrani/job_interview_scam) if you want to check it out for yourself.
 
 ## Attack Vector
 
