@@ -62,7 +62,9 @@ You see the "Need to keep the drivers to up-to-date!"?
 
 THAT'S A BIG FAT NO-NO for anyone reading this to open a terminal and run some command. I'm looking for all the ways that command is malicious, and it doesn't quite stand out to me yet. Looking for some naughty business in the "download.microsoft.com" and can't see any immediately.
 
-Alright, I'm sure we're close to the scam part. I copy it and paste into a text editor. BOOM!
+Alright, I'm sure we're close to the scam part. I copy it and paste into a text editor. 
+
+## BOOM!
 
 The command now is:
 
