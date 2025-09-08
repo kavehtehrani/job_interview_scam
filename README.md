@@ -1,6 +1,6 @@
 # Anatomy Of A Job Interview Scam
 
-This is the story of a sophisticated job interview scam that happened to me via LinkedIn using social engineering and a heavily obfuscated clipboard hijacking to push a malicious payload.
+This is the story of a sophisticated job interview scam that happened to me on LinkedIn using social engineering and a heavily obfuscated clipboard hijacking to push a malicious payload.
 
 I spotted the scam pretty quickly and tried to schedule a phone call or video interview to see how far this scam goes but aside from a LinkedIn conversation (which honestly could have been with an LLM) couldn't directly get in touch with the scammers. I am sharing this to serve as a warning to other and provide ways you can protect yourselves as AI tooling makes attacks such as this further possible to bad actors online.
 
@@ -8,7 +8,7 @@ I have written the story in the section below, but if you just want to see the t
 
 # Story
 
-I received a message on LinkedIn from a profile with the name [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) claiming that they're recruiting for a Portfolio Manager at [Galaxy Digital](https://www.galaxy.com/):
+I received a message on LinkedIn from a profile with the name [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) ([PDF here](screenshots/AFTAB_HABIB_LinkedIn.pdf) claiming that they're recruiting for a Portfolio Manager at [Galaxy Digital](https://www.galaxy.com/):
 
 ![opening_message](./screenshots/aftab-1.png)
 
