@@ -29,7 +29,7 @@ Alright, there is a link to some website called "talentpreview360.com". Head ove
 
 ![icann-talentpreview](./screenshots/icann-talentpreview360.png)
 
-Looks only a few months old, registrar is "Hostinger Operations, UAB" which apparently is "legitimate ICANN-accredited registrar based in Lithuania." Never heard of it, but OK let's proceed.
+Looks only a few months old. Registrar is "Hostinger Operations, UAB" which apparently is an ICANN-accredited registrar based in Lithuania. Never heard of it, but OK let's proceed.
 
 I spin up a VM and go to the link. This is what I'm greeted with:
 
@@ -44,11 +44,10 @@ Fill in and go to the "questions":
 
 Honestly, for what is surely a scam at this point these questions sound kind of legitimate.
 
-![video-question](./screenshots/video-question.png)
 
 And now we reach the scam part. I just didn't know it yet. There's a request for a "brief video introduction". When you hit record within 2 second it errors out. I'm confused as to what's happening. I click on "How to Fix" but nothing really stands out. I notice that right-click and keyboard shortcuts for opening the console are all disabled.
 
-![job_description](./screenshots/aftab-5.png)
+![video-question](./screenshots/video-question.png)
 
 I message our homeboy Aftab to see what's going on.
 
