@@ -19,7 +19,7 @@ I message back to ask for a job description, here it is.
 ![job_description](./screenshots/aftab-2.png)
 ![job_description](./screenshots/aftab-3.png)
 
-Honestly that looks kind of legit! I'm sure its lifted from elsewhere and ran through some gpt.
+Honestly that looks kind of legit! I'm sure it's lifted from elsewhere and ran through some gpt.
 
 Then he sends me a message to butter me up which is clearly copy/pasted from ChatGPT where he has fed my LinkedIn profile.
 
@@ -62,7 +62,7 @@ Now on Windows the "How to Fix" looks like this:
 
 You see the "Need to keep the drivers to up-to-date!"
 
-Then there's a FAT BIG NO-NO for anyone reading this to open a terminal and run some command. I'm looking for all the ways that command is malicious and it doesn't quite stand out to me yet. Looking for typos in "download.microsoft.com" and can't find any.
+Then there's a FAT BIG NO-NO for anyone reading this to open a terminal and run some command. I'm looking for all the ways that command is malicious, and it doesn't quite stand out to me yet. Looking for typos in "download.microsoft.com" and can't find any.
 
 Alright I copy it and paste into a text editor. BOOM!
 
@@ -82,7 +82,7 @@ If you can think of anything else I should be doing, please do let me know! I re
 
 Now if you're read this far, read this section too:
 
-# How To Keep Yourself Save
+# How To Keep Yourself Safe
 
 This is some general advise I can give you that would be relevant in any online interaction. 
 
@@ -180,7 +180,7 @@ I loaded a VM and downloaded the malicious payload. A screenshot of the zip file
 
 There's a couple compiled binaries in there which is safe to assume are likely looking for anything to get their hands one, e.g. API keys, seed phrases, etc.
 
-I looked at the python code and they're putting in registry entries to start the binaries at startup, so this is malicious payload will be scanning the system continuously for anything of value.
+I looked at the python code, and they're putting in registry entries to start the binaries at startup, so this is malicious payload will be scanning the system continuously for anything of value.
 
 ### Mac Payload
 
