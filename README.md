@@ -44,7 +44,6 @@ Fill in and go to the "questions":
 
 Honestly, for what is surely a scam at this point these questions sound kind of legitimate.
 
-
 And now we reach the scam part. I just didn't know it yet. There's a request for a "brief video introduction". When you hit record within 2 second it errors out. I'm confused as to what's happening. I click on "How to Fix" but nothing really stands out. I notice that right-click and keyboard shortcuts for opening the console are all disabled.
 
 ![video-question](./screenshots/video-question.png)
@@ -59,11 +58,11 @@ Now on Windows the "How to Fix" looks like this:
 
 ![message](./screenshots/how-to-fix.png)
 
-You see the "Need to keep the drivers to up-to-date!"
+You see the "Need to keep the drivers to up-to-date!"?
 
-Then there's a FAT BIG NO-NO for anyone reading this to open a terminal and run some command. I'm looking for all the ways that command is malicious, and it doesn't quite stand out to me yet. Looking for typos in "download.microsoft.com" and can't find any.
+THAT'S A BIG FAT NO-NO for anyone reading this to open a terminal and run some command. I'm looking for all the ways that command is malicious, and it doesn't quite stand out to me yet. Looking for some naughty business in the "download.microsoft.com" and can't see any immediately.
 
-Alright I copy it and paste into a text editor. BOOM!
+Alright, I'm sure we're close to the scam part. I copy it and paste into a text editor. BOOM!
 
 The command now is:
 
