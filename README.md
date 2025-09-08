@@ -97,13 +97,13 @@ This is some general advice I can give you that would be relevant in any online 
 
 # Technical Details
 
-From a technical standpoint it's not the most sophisticated attack out there, but it's reasonably well-executed and the malicious code is heavily obfuscated that you would not pick it out right off the bat. Obviously if you're a non-technical person then all of this will likely go over your head.
+From a purely technical standpoint it's not the most sophisticated attack out there, but it's reasonably well-executed and the malicious code is heavily obfuscated that you would not pick it out right off the bat. Obviously if you're a non-technical person then all of this will likely go over your head.
 
 I have saved the files in the [git repo](https://github.com/kavehtehrani/job_offer_scam) if you want to check it out for yourself.
 
 ## Attack Vector
 
-The scam presents itself as a legitimate job interview platform with professional-looking branding, then asks the candidate to complete "technical assessments" and video interviews. The last question asks for a video interview that is designed to fail. Then they want you to "update drivers" which is when users are shown commands that appear legitimate but are actually replaced with malicious payloads when copied to clipboard.
+The scam presents itself as a legitimate job interview platform with professional-looking branding, then asks the candidate to complete a "technical assessment" and a video interview. The last question asks for a video interview that is designed to fail. Then they want you to "update drivers" which is when users are shown commands that appear legitimate but are actually replaced with malicious payloads when copied to clipboard.
 
 On Windows the after the camera "errors out" after a couple of seconds, a "How to Fix" popup shows this command to run:
 
@@ -119,7 +119,7 @@ Not so friendly now. I presume the average user who wouldn't open a terminal wou
 
 The attack uses a React application that implements clipboard hijacking through a `useEffect` hook:
 
-**ACTUAL Clipboard Hijacking Code** (found in `page5_files/index-CXN-5r39.js.download`, line 164):
+**Clipboard Hijacking Code** (found in `page5_files/index-CXN-5r39.js.download`, line 164):
 
 ```javascript
 S.useEffect(() => {
@@ -156,9 +156,9 @@ S.useEffect(() => {
 
 **Obfuscation Techniques:**
 
-The code is heavily obfuscated with lots of redundancies and nonsensical variable names. All whitespaces are also removed compressed into a single line. Right-click and opening of console via keyboard shortcuts is also disabled. The malicious code is also mixed with genuine React applicable code to make it harder to detect.
+The code is heavily obfuscated with lots of redundancies and nonsensical variable names. All whitespaces are also removed so the code is compressed into a single line. Right-click and opening of console via keyboard shortcuts is also disabled. The malicious code is mixed with genuine React applicable code to make it harder to detect.
 
-## Malicious Code Analysis
+## Malicious Payload Analysis
 
 ### Windows Payload
 
@@ -167,8 +167,6 @@ The malicious command that gets executed on Windows systems:
 1. Downloads a malicious ZIP file from `auto-ai.online/cam-v-257.fix`
 2. Extracts it to the Windows temp directory
 3. Executes a VBS script (`update.vbs`) that contains the actual malware payload
-
-### Actual Malware Analysis (from fixed.zip)
 
 I loaded a VM and downloaded the malicious payload. A screenshot of the zip file's content is below:
 
