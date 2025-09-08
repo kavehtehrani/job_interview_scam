@@ -8,7 +8,7 @@ I have written the story in the section below, but if you just want to see the t
 
 # Story
 
-I received a message on LinkedIn from a profile with the name [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) ([PDF here](screenshots/AFTAB_HABIB_LinkedIn.pdf) claiming that they're recruiting for a Portfolio Manager at [Galaxy Digital](https://www.galaxy.com/):
+I received a message on LinkedIn from a profile with the name [Aftab Habib](https://www.linkedin.com/in/aftab-habib-965479297/) ([PDF here](screenshots/AFTAB_HABIB_LinkedIn.pdf)) claiming that they're recruiting for a Portfolio Manager at [Galaxy Digital](https://www.galaxy.com/):
 
 ![opening_message](./screenshots/aftab-1.png)
 
