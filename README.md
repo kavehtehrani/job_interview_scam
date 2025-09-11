@@ -90,6 +90,21 @@ If you can think of anything else I should be doing, please do let me know! I re
 
 ## Updates
 
+#### Hostinger
+
+I reported the issue to Hostinger and within a few hours I get this response:
+
+> Hello,
+>
+> Thank you for your report.
+> Listed abusive account(s) has been suspended.
+>
+> Hostinger Abuse Department  
+> abuse@hostinger.com  
+> https://www.hostinger.com
+
+Both talentpreview360.com and auto-ai.online are no longer reachable. I'm impressed by the speed of action!
+
 #### LinkedIn
 
 I report the issue to LinkedIn and within 20-minutes I get the case marked as "Closed" with this nonsensical generic response:
@@ -97,6 +112,17 @@ I report the issue to LinkedIn and within 20-minutes I get the case marked as "C
 ![linkedin](./screenshots/linkedin-response.png)
 
 Guess now I know why scammers thrive on LinkedIn. Great investigative job LinkedIn!
+
+**Second Update**
+
+After two days of emailing them and five emails, I finally reached a human-being it seems, and they have taken action.
+All the correspondence before were generic auto-responses with nonsensical instructions
+(e.g. "please report profile", "please send screenshot") where clearly no human had exerted an ounce of effort to read anything.
+
+I have to say it felt like LinkedIn has a trash process on purpose to intentionally sandbag reports. It should not be this hard
+to report a scam especially when there's a report on a platter handed out exactly identifying the scam.
+
+![linkedin](./screenshots/linkedin-response-2.png)
 
 # How To Keep Yourself Safe
 
